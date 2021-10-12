@@ -9,7 +9,7 @@ function App() {
   const randomWord = () => {
     const newWord = words[Math.floor(Math.random() * words.length)];
     setWord(newWord);
-    setPoints(Math.ceil(newWord.length / 5));
+    setPoints(Math.ceil(newWord.length / 3));
   };
 
   return (
