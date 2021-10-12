@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="w-full h-screen bg-gray-800 flex flex-col items-center justify-center py-4">
-      <Card word={word} points={points} />
+      {word && <Card word={word} points={points} />}
       <button
         className="mt-5 px-6 py-4 bg-yellow-100 hover:bg-yellow-200 rounded-md"
         onClick={randomWord}
